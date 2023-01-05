@@ -1,0 +1,9 @@
+body{
+    background-color: aqua;
+}
+
+
+*{
+    font-family: 'Single Day', cursive;
+}
+/* *은 css 선택자로 모든것을 이야기하는 태그 */
