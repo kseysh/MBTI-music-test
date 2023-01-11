@@ -1,0 +1,16 @@
+#result{
+    display:none;
+}
+.name{
+    background-color: #d7beda;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.description{
+    background-color: #d7beda;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+}
