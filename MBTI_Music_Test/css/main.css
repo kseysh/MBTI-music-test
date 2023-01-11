@@ -1,6 +1,16 @@
+.startbutton{
+    background-color: #9370db;
+    border-color: #9370db;
+}
+.startbutton:hover, .startbutton:focus{
+    background-color: #d7beda;
+    border-color: #9370db;
+}
+
 #main{
-    background-color: whitesmoke;
+    background-color: #d7beda;
     width: 80%;
     text-align: center;
     border-radius: 30px;
+    display: block;
 }
