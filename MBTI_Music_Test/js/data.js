@@ -106,7 +106,7 @@ const infoList = [
   {
     name: '음악은 나에게 휴식 공간',
     desc: '혼자서 음악으로 지친 하루를 달래는 당신! 노래를 들으며 가끔 울기도 한다.',
-    music: ['백예린 : Dear my blue', '잔나비 : She', '이강승 : 우리가 맞다는 대답을 할거에요', 'Michael Jackson : Heal the World','아이유 : 겨울잠','짙은 : 잘 지내자, 우리, 잘 지내자, 우리','그_냥 : 행복할거야','볼빨간사춘기 : 나의 사춘기에게','그_냥 : 손편지','펀치 : 밤이 되니까','나오미 스콧 : Speecheless','Billie Eilish : idontwannabeyouanymore','잔나비 : 가을밤에 든 생각']
+    music: ['백예린 : Dear my blue', '잔나비 : She', '이강승 : 우리가 맞다는 대답을 할거에요 ', 'Michael Jackson : Heal the World','아이유 : 겨울잠','짙은 : 잘 지내자, 우리, 잘 지내자, 우리','그_냥 : 행복할거야','볼빨간사춘기 : 나의 사춘기에게','그_냥 : 손편지','펀치 : 밤이 되니까','나오미 스콧 : Speecheless','Billie Eilish : idontwannabeyouanymore','잔나비 : 가을밤에 든 생각']
   },//isfp, infp
   {
     name: '언제나 안정적인게 좋아 너무 어딘가에 치우치지 않는 음악!  ',
