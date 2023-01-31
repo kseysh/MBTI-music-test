@@ -25,6 +25,7 @@ for (let i = 0; i < maxSlide; i++) {
 const paginationItems = document.querySelectorAll(".slide_pagination > li");
 
 function nextMove() {
+  console.log("nextMove 실행")
   currSlide++;
   // 마지막 슬라이드 이상으로 넘어가지 않게 하기 위해서
   if (currSlide <= maxSlide) {
@@ -34,10 +35,13 @@ function nextMove() {
     slideItems.forEach((i) => {
       i.setAttribute("style", `left: ${-offset}px`);
     });
+    console.log("각 슬라이드 아이템의 left에 offset 적용")
     // 슬라이드 이동 시 현재 활성화된 pagination 변경
     paginationItems.forEach((i) => i.classList.remove("active"));
     paginationItems[currSlide - 1].classList.add("active");
   } else {
+    console.log("nextMove 실패")
+
     currSlide--;
   }
 }
