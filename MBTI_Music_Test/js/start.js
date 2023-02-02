@@ -85,14 +85,6 @@ function setResult(){
     name.innerHTML=infoList[resultIndex].name;
     desc.innerHTML=infoList[resultIndex].desc;
 
-    
-    var image=document.querySelector(".resultImage");
-    var resultImage=document.createElement('img')
-    resultImage.src='./image/image_'+(resultIndex+1)+".jpg";
-    resultImage.alt=resultIndex+1;
-    resultImage.classList.add('img-fluid')
-    image.appendChild(resultImage);
-
     const slideItem = document.querySelectorAll(".slide_item");
 
     var randomList=setRandom(infoList[resultIndex].music.length);
@@ -101,7 +93,16 @@ function setResult(){
         console.log(slideItem.item(i));
         slideItem.item(i).innerHTML=infoList[resultIndex].music[randomList[i]];
     }
+    resultPage();
+    
+    var image=document.querySelector(".resultImage");
+    var resultImage=document.createElement('img')
+    resultImage.src='./image/image_'+(resultIndex+1)+".jpg";
+    resultImage.alt=resultIndex+1;
+    resultImage.classList.add('img-fluid')
+    image.appendChild(resultImage);
 
+    
 
 }
 

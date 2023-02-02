@@ -111,7 +111,7 @@ const infoList = [
   {
     name: '언제나 안정적인게 좋아 너무 어딘가에 치우치지 않는 음악!  ',
     desc: '음악이던 인간관계던 안정적인 것을 추구하는 당신! 트렌디 하면서 적당히 신나고 적당히 잔잔한 음악을 좋아한다. 감성적인 힙합이나 팝송도 좋아한다'
-    ,music:['아이유 : 마음', '김동률 : 배려', 'Sam Smith : To Die For', '가을 방학 :  가끔 미치도록 네가 안고 싶어질 때가 있어','비비 : PADO','헤이즈 : And July','악동뮤지션 : 고래','해쉬 스완 : 나는 과연 너를','펀치 : Done For Me','줍에이 : 반복','Owen : City','Pink Sweat : At my worst','한요한 : 람보르기니','릴러말즈 : OUT OF MY SIGHT','10CM : 그라데이션']
+    ,music:['아이유 : 마음', '김동률 : 배려', 'Sam Smith : To Die For','비비 : PADO','헤이즈 : And July','악동뮤지션 : 고래','해쉬 스완 : 나는 과연 너를','펀치 : Done For Me','줍에이 : 반복','Owen : City','Pink Sweat : At my worst','한요한 : 람보르기니','릴러말즈 : OUT OF MY SIGHT','10CM : 그라데이션']
   },//isfj, estp??
   {
     name: '도입부만으로 노래 전체를 판단할 수 있는 선견지명!  ',
