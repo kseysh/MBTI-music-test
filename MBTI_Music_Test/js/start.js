@@ -3,7 +3,6 @@ const questionSection=document.querySelector("#questionSection");
 const result=document.querySelector("#result");
 const ENDPOINT=12;
 var resultList=new Array(8).fill(0);
-const audio=new Audio('')
 
 function calResult(){
     var str='';
@@ -88,12 +87,12 @@ function setResult(){
     const slideItem = document.querySelectorAll(".slide_item");
 
     var randomList=setRandom(infoList[resultIndex].music.length);
-    console.log(randomList)
     for (let i = 0;i<5;i++){
         console.log(slideItem.item(i));
         slideItem.item(i).innerHTML=infoList[resultIndex].music[randomList[i]];
     }
     resultPage();
+    console.log(slideItem)
 
     var image=document.querySelector(".resultImage");
     var resultImage=document.createElement('img')
@@ -102,8 +101,36 @@ function setResult(){
     resultImage.classList.add('img-fluid')
     image.appendChild(resultImage);
 
-    
+}
 
+function recommendAgain(){
+    console.log("recommend again");
+    var resultIndex=calResult();
+    var slideItem = document.querySelectorAll(".slide_item");
+
+    var randomList=setRandom(infoList[resultIndex].music.length);
+    console.log(randomList)
+    for (let i = 0;i<5;i++){
+        slideItem.item(i+1).innerHTML=infoList[resultIndex].music[randomList[i]];
+        console.log(slideItem.item(i+1))
+    }
+    // 무한 슬라이드를 위해 start, end 슬라이드 복사하기
+    const startSlide = slideItem[0];
+    const endSlide = slideItem[5];
+
+    // 엘리먼트 생성
+    const startElem = document.createElement(startSlide.tagName);
+    const endElem = document.createElement(endSlide.tagName);
+
+    // 엘리먼트에 클래스 적용 동일하게 하기
+    endSlide.classList.forEach((c) => endElem.classList.add(c));
+    endElem.innerHTML = endSlide.innerHTML;
+    startSlide.classList.forEach((c) => startElem.classList.add(c));
+    startElem.innerHTML = startSlide.innerHTML;
+
+    // 각 복제한 엘리먼트를 각 위치에 추가하기
+    slideItem[0]=endElem;
+    slideItem[slideItem.length - 1]=startElem;
 }
 
 function goResult(){
