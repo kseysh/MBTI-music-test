@@ -3,7 +3,7 @@ const questionSection=document.querySelector("#questionSection");
 const result=document.querySelector("#result");
 const ENDPOINT=12;
 var resultList=new Array(8).fill(0);
-console.log(resultList);
+const audio=new Audio('')
 
 function calResult(){
     var str='';
@@ -94,7 +94,7 @@ function setResult(){
         slideItem.item(i).innerHTML=infoList[resultIndex].music[randomList[i]];
     }
     resultPage();
-    
+
     var image=document.querySelector(".resultImage");
     var resultImage=document.createElement('img')
     resultImage.src='./image/image_'+(resultIndex+1)+".jpg";
@@ -114,10 +114,29 @@ function goResult(){
     setResult();
 }
 
+function audioClick(){
+    var playBtn=document.querySelector(".musicPlayBtn");
+    var audiocontainer=document.querySelector("#audioContainer");
+
+    if(playBtn.value=="pause"){
+        audiocontainer.volume=0.2;
+        audiocontainer.loop=true;
+        audiocontainer.play();
+        playBtn.value="play"
+        playBtn.innerHTML="❚❚"
+    }
+    else{
+        audiocontainer.pause();
+        playBtn.value="pause"
+        playBtn.innerHTML="▶"
+    }
+}
+
+
 function addAnswer(answerText,currentIdx,idx){
 
     var answerBox=document.querySelector(".answerBox");
-    var button=document.createElement('button')
+    var button=document.createElement('button');
     button.classList.add('answerList')
     button.classList.add('my-3')
     button.classList.add('py-3')
@@ -149,6 +168,7 @@ function addAnswer(answerText,currentIdx,idx){
 }
 
 function addQuestion(currentIdx){
+    
     if(currentIdx==ENDPOINT){
         goResult();
         return;
@@ -166,6 +186,13 @@ function addQuestion(currentIdx){
     var percent = document.querySelector('.percentage');
     console.log("addQuestion 마지막 currentIdx : ",currentIdx)
     percent.innerHTML=' '+ (1+currentIdx) + ':00 / ' + ENDPOINT +':00';
+
+    if(currentIdx==ENDPOINT-1){
+        var musicPlayBtn = document.querySelector('.musicPlayBtn')
+        musicPlayBtn.style.display='flex'
+        musicPlayBtn.onclick=function(){ audioClick() };
+
+    }
 
 }
 

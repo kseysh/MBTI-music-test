@@ -95,9 +95,9 @@ const qnaList = [
   {
     q: '12. 이 노래가 나오는 장면에서 내가 주인공이라면??',
     a: [
-      { answer: 'a. 모험을 떠날 것 같아', type: [] },
-      { answer: 'b. 역경과 고난을 헤치는 상황일 것 같아', type: [1] },
-      { answer: 'c. 친구랑 여행을 떠날 것 같아~', type: [0] },
+      { answer: 'a. 데이트 가는 길일 것 같은데?', type: [4] },
+      { answer: 'b. 아침에 일어나서 하루를 시작할 것 같아!', type: [1,6] },
+      { answer: 'c. 친구랑 여행을 떠날 것 같아~', type: [0]},
     ]
   }
 ]
@@ -136,7 +136,7 @@ const infoList = [
   {
     name: '사람에게 상처받은 마음을 음악으로 치유하는 타입',
     desc: '정이 많아 주변사람들에게 잘해주는 만큼 상처받기도 하고 힘들어하기도 하는 당신! 이별하게 되면 후유증이 오래가며 마음이 돌아서면 다시 돌이키기 어렵다. 사람 만나는 것도, 혼자 있는 것도 모두 좋아한다.'
-    ,music:['다비치 : 안녕이라고 말하지마','CHEEZE : Mood Indigo','노을 : 늦은 밤 너의 집 앞 골목길에서','권진아 : 운이 좋았지','알레프 : No One Told Me Why','김나영 : 솔직하게 말해서 나', '한요한 : 불꽃','악동뮤지션 : 어떻게 이별까지 사랑하겠어, 널 사랑하는 거지','다비치 : 거북이','잔나비 : 꿈과 책과 힘과 벽','DAY6 : 한 페이지가 될 수 있게','아이유 : 잠 못드는 밤 비는 내리고']
+    ,music:['다비치 : 안녕이라고 말하지마','CHEEZE : Mood Indigo','노을 : 늦은 밤 너의 집 앞 골목길에서','권진아 : 운이 좋았지','알레프 : No One Told Me Why','김나영 : 솔직하게 말해서 나', '한요한 : 불꽃','악동뮤지션 : 어떻게 이별까지 사랑하겠어, 널 사랑하는 거지','다비치 : 거북이','잔나비 : 꿈과 책과 힘과 벽','DAY6 : 한 페이지가 될 수 있게','아이유 : 잠 못드는 밤 비는 내리고','매드클라운 : 우리집을 못 찾겠군요']
   },//enfj
   {
     name: '긍정 가득 열정 가득 몰입왕 노동요는 나에게 각성제!',
@@ -146,6 +146,6 @@ const infoList = [
   {
     name: '흥이 난다 흥이나 인간 비타민!',
     desc: '흥이 뭔지 아는 당신! 신나는 노래를 주로 좋아하며 사랑 노래를 들으며 혼자 이성과 상상 속에서 사랑에 빠지다가 금방 이별 노래를 들으며 상상속 이성과 가슴 아픈 이별을 하기도 한다. 좋아하는 노래가 금방 바뀌며 누구보다 순수한 마음을 가지고 있다.'
-    ,music:['BIGBANG : Tonight','매드클라운 : 우리집을 못 찾겠군요','Charlie Puth : Light Switch','윤하 : 비밀번호 486','Weeekly : After School','엔플라잉 : 옥탑방','NewJeans : Cookie','윤하 : 오르트구름','아이유 : 삐삐','츄 : 일과 이분의 일','NewJeans : Hype Boy','Carly Rae Jepsen : Call Me Maybe','Bruno Mars : Marry You','Aqua : Barbie Girl','Kesha : TiK ToK','샤키라 : Try Everything','One Direction : What Makes You Beautiful','Gummibar : Gummybear Song','레게 강 같은 평화 : 부산 바캉스']
+    ,music:['BIGBANG : Tonight','Charlie Puth : Light Switch','윤하 : 비밀번호 486','Weeekly : After School','엔플라잉 : 옥탑방','NewJeans : Cookie','윤하 : 오르트구름','아이유 : 삐삐','츄 : 일과 이분의 일','NewJeans : Hype Boy','Carly Rae Jepsen : Call Me Maybe','Bruno Mars : Marry You','Aqua : Barbie Girl','Kesha : TiK ToK','샤키라 : Try Everything','One Direction : What Makes You Beautiful','레게 강 같은 평화 : 부산 바캉스']
   }//enfp
 ]
