@@ -77,7 +77,7 @@ function setRandom(listLength){
 
 function setResult(){
     var resultIndex=calResult();
-    console.log(resultIndex)
+    console.log("resultIndex:"+resultIndex)
 
     var name=document.querySelector(".name");
     var desc=document.querySelector(".description");
@@ -100,6 +100,11 @@ function setResult(){
     resultImage.alt=resultIndex+1;
     resultImage.classList.add('img-fluid')
     image.appendChild(resultImage);
+
+    var friends=document.querySelectorAll(".friend");
+    friends.item(0).innerHTML=infoList[infoList[resultIndex].friend[0]].name;
+    friends.item(1).innerHTML=infoList[infoList[resultIndex].friend[1]].name;
+
 
 }
 
