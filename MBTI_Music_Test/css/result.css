@@ -7,12 +7,61 @@
     text-align: center;
     font-size: 25px;
 }
+.descriptionBox{
+  margin-bottom:30px;
+  width: 100%;
+  height: 150px;
+  perspective: 1000px;
+}
 
-.description{
-    background-color: #d7beda;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 15px;
+.card{
+
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  background-color:transparent;
+  border-color: transparent;
+
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.front, .back{
+  background-color: #d7beda;
+  border-radius: 35px;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+
+
+
+
+.reverseBtn{
+  /* position */
+  position: absolute;
+
+
+  top: 90%;
+  right: 0%;
+  transform: translate(-20%,-100%);
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .slideBlock{
@@ -191,17 +240,6 @@ li {
   border-color: #9370db;
 }
 
-.friendBlock{
-  background-color: #d7beda;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 18px;
-
-  width: 100%;
-  position: relative;
-  margin-top: 25px;
-  padding-bottom: 20px;
-}
 
 .shareBtn{
   display: flex;
@@ -213,16 +251,28 @@ li {
   padding-right: 10px;
   padding-left: 10px;
 
-
   /* position */
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-100%);
   font-size: 13px;
+  font-weight: bold;
   background-color: #d7beda;
   border-radius: 10px;
   cursor: pointer;
   border-color: #c19cc5;
   border-style: solid;
 }
+.friendBlock{
+  padding-bottom: 20px;
+}
+.friendTitle{
+  font-size: 25px;
+  font-weight: bold;
+}
+.friend{
+  font-size: 18px;
+  text-decoration: underline;
+}
+
