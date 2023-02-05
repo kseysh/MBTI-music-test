@@ -126,7 +126,7 @@ const infoList = [
     ,friend:[7,8]
   },//istj 3 
   {
-    name: '한 곡에 꽂히면 질릴 때 까지 파는 두더지!  ',
+    name: '한 곡에 꽂히면 질릴 때 까지 파는 두더지! ',
     desc: '노래 하나를 하루종일 반복노래로 듣는 당신! 특별한 취향 덕에 꽂힌 노래가 남에게는 호불호가 갈리기도 한다'
     ,music:['백예린 : 그건 아마 우리의 잘못은 아닐 거야','데이먼스 이어 : Auburn','Fall Out Boy : Centuries','CHEEZE : Mandaleine Love','이강승 : 우리가 맞다는 대답을 할 거에요','Coldplay : Viva la vida','Post Malone : Stay','AKMU : 전쟁터','BIGBANG : Blue','자우림 : 스물다섯, 스물하나','잔나비 : November Rain','10CM : 서랍']
     ,friend:[2,5]
