@@ -134,7 +134,7 @@ const infoList = [
   {
     name: '나만 아는 노래를 수집하는 숨겨진 원석 탐험가!',
     desc: '남과 같은 것은 거부하는 당신! 남에게 흔하지 않은 노래를 추천해 줄 때 뿌듯함을 느낀다. 음악을 고를 때 자신만의 기준이 확고하다. 멜론 차트에 있는 노래보다는 직접 찾은 노래를 선호한다. 나만 알던 노래가 순위권에 들어가게 되면 괜히 섭섭해진다.    '
-    ,music:['거미 : Autumn Breeze','Anson Seabra : Peter Pan Was Right','카더가든 : 가까운 듯 먼 그대여','잔나비 : 꿈나라 별나라','너드커넥션 : 29','위수 : 교토','신해경 그대는 총천연색','잔나비 : 달','Seori : 긴 밤','Finn Askew : Roses','Billie Eilish : bellyache','해쉬 스완 : Indian Summer','시온 : Braindead']
+    ,music:['거미 : Autumn Breeze','Anson Seabra : Peter Pan Was Right','카더가든 : 가까운 듯 먼 그대여','잔나비 : 꿈나라 별나라','너드커넥션 : 29','위수 : 교토','신해경 그대는 총천연색','잔나비 : 달','Seori : 긴 밤','Finn Askew : Roses','Billie Eilish : bellyache','해쉬 스완 : Indian Summer','시온 : Braindead','에픽하이 : 그래서 그래']
     ,friend:[2,4]
   },//infj,intp 5
   {
