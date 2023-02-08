@@ -1,4 +1,4 @@
-// EI/NS/FT/JP 순서대로 01234567
+// EI/NS/FT/JP 순서대로 01234567 
 
 const qnaList = [
   {
