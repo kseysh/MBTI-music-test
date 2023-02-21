@@ -1,10 +1,10 @@
-// EI/NS/FT/JP 순서대로 01234567 
+// EI/NS/FT/JP 순서대로 01234567
 
 const qnaList = [
   {
     q: '1. 내가 좋아하는 음악 장르는?',
     a: [
-      { answer: 'a. 나만 아는 인디음악!', type: [1,2,4] },
+      { answer: 'a. 나만 아는 인디음악~!', type: [1,2,4] },
       { answer: 'b. 몸이 들썩들썩 kpop!', type: [0,3] },
       { answer: 'c. 언제나 감성적인 발라드!', type: [1,3 ] },
     ]
@@ -12,7 +12,7 @@ const qnaList = [
   {
     q: '2. 나는 노래를 들을 때 ',
     a: [
-      { answer: 'a. 그때그때 듣고싶은 노래를 듣는다. ', type: [2] },
+      { answer: 'a. 그때그때 듣고싶은 노래를 듣는다.', type: [2] },
       { answer: 'b. 내가 만들어 둔 플레이리스트를 듣는다.', type: [3,6] },
       { answer: 'c. 음악 앱에서 나오는 대로 듣는다.', type: [3,7] },
     ]
@@ -126,7 +126,7 @@ const infoList = [
     ,friend:[7,8]
   },//istj 3 
   {
-    name: '한 곡에 꽂히면 질릴 때 까지 파는 두더지! ',
+    name: '한 곡에 꽂히면 질릴 때 까지 파는 두더지!  ',
     desc: '노래 하나를 하루종일 반복노래로 듣는 당신! 특별한 취향 덕에 꽂힌 노래가 남에게는 호불호가 갈리기도 한다'
     ,music:['백예린 : 그건 아마 우리의 잘못은 아닐 거야','데이먼스 이어 : Auburn','Fall Out Boy : Centuries','CHEEZE : Mandaleine Love','이강승 : 우리가 맞다는 대답을 할 거에요','Coldplay : Viva la vida','Post Malone : Stay','AKMU : 전쟁터','BIGBANG : Blue','자우림 : 스물다섯, 스물하나','잔나비 : November Rain','10CM : 서랍']
     ,friend:[2,5]
@@ -134,7 +134,7 @@ const infoList = [
   {
     name: '나만 아는 노래를 수집하는 숨겨진 원석 탐험가!',
     desc: '남과 같은 것은 거부하는 당신! 남에게 흔하지 않은 노래를 추천해 줄 때 뿌듯함을 느낀다. 음악을 고를 때 자신만의 기준이 확고하다. 멜론 차트에 있는 노래보다는 직접 찾은 노래를 선호한다. 나만 알던 노래가 순위권에 들어가게 되면 괜히 섭섭해진다.    '
-    ,music:['거미 : Autumn Breeze','Anson Seabra : Peter Pan Was Right','카더가든 : 가까운 듯 먼 그대여','잔나비 : 꿈나라 별나라','너드커넥션 : 29','위수 : 교토','신해경 그대는 총천연색','잔나비 : 달','Seori : 긴 밤','Finn Askew : Roses','Billie Eilish : bellyache','해쉬 스완 : Indian Summer','시온 : Braindead','에픽하이 : 그래서 그래']
+    ,music:['거미 : Autumn Breeze','Anson Seabra : Peter Pan Was Right','카더가든 : 가까운 듯 먼 그대여','잔나비 : 꿈나라 별나라','너드커넥션 : 29','위수 : 교토','신해경 그대는 총천연색','잔나비 : 달','Seori : 긴 밤','Finn Askew : Roses','Billie Eilish : bellyache','해쉬 스완 : Indian Summer','시온 : Braindead']
     ,friend:[2,4]
   },//infj,intp 5
   {
