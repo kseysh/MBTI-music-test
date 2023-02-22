@@ -1,13 +1,15 @@
-.startbutton{
+.startbutton {
     background-color: #9370db;
     border-color: #9370db;
 }
-.startbutton:hover, .startbutton:focus{
+
+.startbutton:hover,
+.startbutton:focus {
     background-color: #d7beda;
     border-color: #9370db;
 }
 
-#main{
+#main {
     background-color: #d7beda;
     width: 80%;
     text-align: center;
