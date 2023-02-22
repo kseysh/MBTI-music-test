@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:url" content="https://mbtimusictesting.netlify.app/" />
+
+    <title>MBTI Music Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="music icon" href="./image/music_icon.ico" />
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/question.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section id="main" class="mx-auto my-5 py-5">
+            <h2>나도 몰랐던 나의 노래 취향</h2>
+            <div class="mx-auto my-5 px-5 col-lg-6 col-md-6 col-sm-8 col-8">
+                <img src="./image/main.jpg" alt="mainImage" class="img-fluid">
+            </div>
+            <p>
+                MBTI 노래 추천 사이트입니다. <br>
+                나도 몰랐던 나의 노래 취향을 찾아보세요. <br>
+                노래 취향을 알아가고 내가 좋아하는 노래도 알아가봐요~
+            </p>
+            <button type="button" class="btn btn-primary startbutton" onclick="js:goQuestionSection()">시작하기</button>
+
+        </section>
+
+        <section id="questionSection">
+            <audio id="audioContainer" src="./image/On the hill.mp3"></audio>
+
+            <div class="status mt-4">
+                <div class="statusBar">
+                </div>
+            </div>
+            <div class="percentage">
+
+            </div>
+
+            <div class="question my-3 py-3">
+            </div>
+
+            <div class="mx-auto my-5 px-5 col-lg-5 col-md-6 col-sm-8 col-10">
+                <div class="questionImage my-5">
+                    <img src="./image/main.jpg" alt="mainImage" class="img-fluid">
+                    <button class="musicPlayBtn" value="pause">
+                        ▶
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="answerBox ">
+
+            </div>
+
+        </section>
+
+
+        <section id="result">
+            <div class="name my-3 py-3">
+                제목입니다.
+            </div>
+            <div class="resultImage mx-auto my-5 px-5 col-lg-5 col-md-8 col-sm-10 col-10">
+            </div>
+            <div class="descriptionBox"> <!--3D 공간-->
+                <div class="card">
+
+                    <div class="front">
+                        <div class="description my-3 py-3">
+                            설명입니다
+                        </div>
+                        <div class="reverseBtn">나와 노래취향이 비슷한 친구 찾기! ➨</div>
+                    </div>
+
+                    <div class="back">
+                        <div class="friendBlock">
+                            <div class="friendTitle">나와 노래 취향이 비슷한 친구</div>
+                            <br>
+                            <li class="friend" id="friend1">1</li>
+                            <li class="friend" id="friend2">2</li>
+                        </div>
+                        <div class="reverseBtn"> 설명 보기 ➨</div>
+                        <div class="reloadBtn">테스트 다시 하기</div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="slideBlock">
+                <div class="recommendTitle">너를 위한 추천 곡!</div>
+
+                <div class="slide slide_wrap">
+                    <div class="slide_item">1</div>
+                    <div class="slide_item">2</div>
+                    <div class="slide_item">3</div>
+                    <div class="slide_item">4</div>
+                    <div class="slide_item">5</div>
+                    <div class="slide_prev_button slide_button">◀</div>
+                    <div class="slide_next_button slide_button">▶</div>
+                    <ul class="slide_pagination"></ul>
+                </div>
+                <button type="button" class="btn btn-primary startbutton recommendAgain"
+                    onclick="js:recommendAgain()">다른 노래도 추천해줘!</button>
+            </div>
+
+
+
+
+        </section>
+    </div>
+    <script src="./js/data.js" charset="utf-8"></script>
+    <script src="./js/start.js" charset="utf-8"></script>
+    <script src="./js/animation.js" charset="utf-8"></script>
+</body>
+
+</html>
