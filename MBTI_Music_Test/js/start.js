@@ -3,6 +3,8 @@ const questionSection = document.querySelector("#questionSection");
 const result = document.querySelector("#result");
 const ENDPOINT = 12;
 var resultList = new Array(8).fill(0);
+console.log("안녕하세요~")
+
 
 function calResult() {
   var str = "";
@@ -26,7 +28,7 @@ function calResult() {
   } else {
     str += "P";
   }
-  console.log("MBTI : ", str);
+  console.log("당신의 MBTI : ", str);
 
   switch (str) {
     case "ISFP":
@@ -72,7 +74,6 @@ function setRandom(listLength) {
 
 function setResult() {
   var resultIndex = calResult();
-  console.log("resultIndex:" + resultIndex);
 
   var name = document.querySelector(".name");
   var desc = document.querySelector(".description");
@@ -83,11 +84,9 @@ function setResult() {
 
   var randomList = setRandom(infoList[resultIndex].music.length);
   for (let i = 0; i < 5; i++) {
-    console.log(slideItem.item(i));
     slideItem.item(i).innerHTML = infoList[resultIndex].music[randomList[i]];
   }
   resultPage();
-  console.log(slideItem);
 
   var image = document.querySelector(".resultImage");
   var resultImage = document.createElement("img");
@@ -123,12 +122,10 @@ function setResult() {
 }
 
 function recommendAgain() {
-  console.log("recommend again");
   var resultIndex = calResult();
   var slideItem = document.querySelectorAll(".slide_item");
-
+  console.log("새로운 추천 노래!")
   var randomList = setRandom(infoList[resultIndex].music.length);
-  console.log(randomList);
   for (let i = 0; i < 5; i++) {
     slideItem.item(i + 1).innerHTML =
       infoList[resultIndex].music[randomList[i]];
@@ -185,6 +182,7 @@ function goFriendResult(friendIndex) {
     const slideItem = document.querySelectorAll(".slide_item");
 
     var randomList = setRandom(infoList[friendIndex].music.length);
+    console.log("새로운 추천 노래!")
     for (let i = 0; i < 5; i++) {
       console.log(slideItem.item(i));
       slideItem.item(i).innerHTML = infoList[friendIndex].music[randomList[i]];
@@ -206,7 +204,6 @@ function goFriendResult(friendIndex) {
       friend1.removeEventListener("click", Func1);
       friend2.removeEventListener("click", Func2);
       goFriendResult(infoList[friendIndex].friend[0]);
-      console.log("Func1실행");
     };
     friend1.addEventListener("click", Func1);
 
@@ -214,7 +211,6 @@ function goFriendResult(friendIndex) {
       friend1.removeEventListener("click", Func1);
       friend2.removeEventListener("click", Func2);
       goFriendResult(infoList[friendIndex].friend[1]);
-      console.log("Func2실행");
     };
     friend2.addEventListener("click", Func2);
     result.style.display = "block";
@@ -290,13 +286,11 @@ function addQuestion(currentIdx) {
   var question = document.querySelector(".question");
   question.innerHTML = qnaList[currentIdx].q;
   for (let i in qnaList[currentIdx].a) {
-    console.log("addAnswer 호출", i);
     addAnswer(qnaList[currentIdx].a[i].answer, currentIdx, i);
   }
   var status = document.querySelector(".statusBar");
   status.style.width = (100 / ENDPOINT) * (currentIdx + 1) + "%";
   var percent = document.querySelector(".percentage");
-  console.log("addQuestion 마지막 currentIdx : ", currentIdx);
   percent.innerHTML = " " + (1 + currentIdx) + ":00 / " + ENDPOINT + ":00";
 
   if (currentIdx == ENDPOINT - 1) {
@@ -332,7 +326,12 @@ reverseBtn[1].addEventListener("click", click);
 let reloadBtn = document.querySelector(".reloadBtn");
 reloadBtn.addEventListener("click", reload);
 function reload(event) {
-  location.reload();
+  result.style.WebkitAnimation = "fadeOut 1s";
+  result.style.animation = "fadeOut 1s";
+  setTimeout(() => {
+    result.style.display = "none";
+    location.reload();
+  }, 950);
 }
 
 function click(event) {
