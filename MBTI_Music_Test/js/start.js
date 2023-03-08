@@ -133,7 +133,6 @@ function setResult() {
 function recommendAgain() {
   var slideItem = document.querySelectorAll(".slide_item");
   console.log("새로운 추천 노래!")
-  console.log(resultIndex);
   var randomList = setRandom(infoList[resultIndex].music.length);
   for (let i = 0; i < 5; i++) {
     slideItem.item(i + 1).innerHTML =
