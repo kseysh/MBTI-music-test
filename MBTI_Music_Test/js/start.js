@@ -3,6 +3,7 @@ const questionSection = document.querySelector("#questionSection");
 const result = document.querySelector("#result");
 const ENDPOINT = 12;
 var resultList = new Array(8).fill(0);
+var resultIndex = 0;
 console.log("안녕하세요~")
 
 
@@ -33,29 +34,38 @@ function calResult() {
   switch (str) {
     case "ISFP":
     case "INFP":
-      return 0;
+      resultIndex = 0;
+      return;
     case "ISFJ":
     case "ESTP":
-      return 1;
+      resultIndex = 1;
+      return;
     case "ISTP":
     case "ENTP":
-      return 2;
+      resultIndex = 2;
+      return;
     case "ISTJ":
-      return 3;
+      resultIndex = 3;
+      return;
     case "INTJ":
     case "ESFP":
-      return 4;
+      resultIndex = 4;
+      return;
     case "INFJ":
     case "INTP":
-      return 5;
+      resultIndex = 5;
+      return;
     case "ENFJ":
-      return 6;
+      resultIndex = 6;
+      return;
     case "ESTJ":
     case "ESFJ":
     case "ENTJ":
-      return 7;
+      resultIndex = 7;
+      return;
     default: //case : 'ENFP'
-      return 8;
+      resultIndex = 8;
+    return;
   }
   return;
 }
@@ -73,7 +83,6 @@ function setRandom(listLength) {
 }
 
 function setResult() {
-  var resultIndex = calResult();
 
   var name = document.querySelector(".name");
   var desc = document.querySelector(".description");
@@ -122,9 +131,9 @@ function setResult() {
 }
 
 function recommendAgain() {
-  var resultIndex = calResult();
   var slideItem = document.querySelectorAll(".slide_item");
   console.log("새로운 추천 노래!")
+  console.log(resultIndex);
   var randomList = setRandom(infoList[resultIndex].music.length);
   for (let i = 0; i < 5; i++) {
     slideItem.item(i + 1).innerHTML =
@@ -204,6 +213,7 @@ function goFriendResult(friendIndex) {
       friend1.removeEventListener("click", Func1);
       friend2.removeEventListener("click", Func2);
       goFriendResult(infoList[friendIndex].friend[0]);
+      resultIndex = friendIndex;
     };
     friend1.addEventListener("click", Func1);
 
@@ -211,6 +221,7 @@ function goFriendResult(friendIndex) {
       friend1.removeEventListener("click", Func1);
       friend2.removeEventListener("click", Func2);
       goFriendResult(infoList[friendIndex].friend[1]);
+      resultIndex = friendIndex;
     };
     friend2.addEventListener("click", Func2);
     result.style.display = "block";
